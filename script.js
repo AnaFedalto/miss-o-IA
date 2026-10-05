@@ -37,11 +37,11 @@ const perguntas = [
         alternativas: [
             {
                 texto:"Utilizar uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento",
-                afirmacao:"afirmacao"
+                afirmacao: "Compreende a Inteligência Artificial como uma aliada no processo de aprendizagem, utilizando-a para pesquisar, simplificar conceitos complexos e otimizar o estudo de forma crítica."
             },
             {
                 texto: "Escrever o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema.",
-                afirmacao:"afirmacao"
+                afirmacao:"Confia no seu próprio repertório e no diálogo direto para construir o trabalho."
             }
         ]
     },
@@ -50,11 +50,11 @@ const perguntas = [
         alternativas: [
             {
                 texto:"Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores.",
-                afirmacao:"afirmacao"
+                afirmacao:"Enfatiza a responsabilidade social e a preservação dos empregos frente à automação."
             },
             {
                 texto:"Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
-                afirmacao:"afirmacao"
+                afirmacao:"Enfatiza a transformação digital como oportunidade de inovação e novos trabalhos."
             }
             
         ]
@@ -64,11 +64,11 @@ const perguntas = [
         alternativas: [
             {
                 texto:"Criar uma imagem utilizando uma plataforma de design como o Paint.",
-                afirmacao:"afirmacao"
+                afirmacao: "Opta pelo controle total sobre a criação artística, utilizando ferramentas manuais para expressar sua visão autoral sobre a IA."
             },
             {
                 texto:"Criar uma imagem utilizando um gerador de imagem de IA.",
-                afirmacao:"afirmacao"
+                afirmacao: "Aplica a própria tecnologia que é o tema do trabalho, explorando geradores de IA para materializar sua visão conceitual através da co-criação digital."
             }
             
         ]
@@ -78,11 +78,11 @@ const perguntas = [
         alternativas: [
             {
                 texto: "O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial.",
-                afirmacao:"afirmacao"
+                afirmacao:"Valoriza o senso crítico, a checagem de fatos e a identidade autoral no trabalho em grupo."
             },
             {
                 texto: "Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
-                afirmacao:"afirmacao"
+                afirmacao: "Assume uma postura passiva diante da IA, delegando a ela a escrita final do conteúdo."
             }
             
             
