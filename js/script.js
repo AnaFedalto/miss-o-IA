@@ -1,3 +1,6 @@
+import {aleatorio, nome} from './aleatorio.js';
+caixaPerguntas.textContent = `Em 2049, ${nome}`;
+
 const caixaPrincipal = document.querySelector(".caixa-principal");
 const caixaPerguntas = document.querySelector(".caixa-perguntas");
 const caixaAlternativas = document.querySelector(".caixa-alternativas");
