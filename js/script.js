@@ -3,16 +3,11 @@ const caixaPerguntas = document.querySelector(".caixa-perguntas");
 const caixaAlternativas = document.querySelector(".caixa-alternativas");
 const caixaResultado = document.querySelector(".caixa-resultado");
 const textoResultado = document.querySelector(".texto-resultado");
+const botaoJogarNovamente = document.querySelector(“.novamente-btn”);
+
 
 import {aleatorio} from ‘./aleatorio.js’;
 import {perguntas} from ‘./perguntas.js;
-
-function respostaSelecionada(opcaoSelecionada) {
-    const afirmacoes = aleatorio(opcaoSelecionada.afirmacao);
-historiaFinal += afirmacoes + “ “;
-atual++;
-mostraPergunta();
-}
 
 const perguntas = [
     {
@@ -41,7 +36,7 @@ const perguntas = [
             }           
             
         ]
-    },
+    
     {
         enunciado: "Com a descoberta desta tecnologia, chamada Inteligência Artificial (IA), uma professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre elaIA. No fim de uma aula ela pede que você escreva um trabalho sobre o uso de tecnologia em sala de aula. Qual atitude você toma?",
         alternativas: [
@@ -105,6 +100,7 @@ let perguntaAtual;
 let historiaFinal = "";
 
 function mostraPergunta() {
+
     if(atual >= perguntas.length){
         mostraResultado();
         return;
@@ -124,6 +120,8 @@ function mostraAlternativas(){
     }
 }
 
+
+
 function respostaSelecionada(opcaoSelecionada){
     const afirmacoes = opcaoSelecionada.afirmacao;
     historiaFinal += afirmacoes + " ";
@@ -131,10 +129,26 @@ function respostaSelecionada(opcaoSelecionada){
     mostraPergunta();
 }
 
-function mostraResultado(){
-    caixaPerguntas.textContent = "Em 2049...";
-    textoResultado.textContent = historiaFinal;
-    caixaAlternativas.textContent = ""; 
+function respostaSelecionada(opcaoSelecionada) {
+    const afirmacoes = aleatorio(opcaoSelecionada.afirmacao);
+historiaFinal += afirmacoes + “ “;
+atual++;
+mostraPergunta();
 }
 
+function mostraResultado() {
+caixaPerguntas.textContent = "Em 2049...";
+textoResultado.textContent = historiaFinal;
+caixaAlternativas.textContent = "";
+caixaResultado.classList.add("mostrar"); botaoJogarNovamente.addEventListener("click", jogaNovamente);
+}
+
+
+    function jogaNovamente() {
+atual = 0;
+historiaFinal = "";
+caixaResultado.classList.remove("mostrar");
 mostraPergunta();
+}
+
+
