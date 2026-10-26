@@ -4,6 +4,16 @@ const caixaAlternativas = document.querySelector(".caixa-alternativas");
 const caixaResultado = document.querySelector(".caixa-resultado");
 const textoResultado = document.querySelector(".texto-resultado");
 
+import {aleatorio} from ‘./aleatorio.js’;
+import {perguntas} from ‘./perguntas.js;
+
+function respostaSelecionada(opcaoSelecionada) {
+    const afirmacoes = aleatorio(opcaoSelecionada.afirmacao);
+historiaFinal += afirmacoes + “ “;
+atual++;
+mostraPergunta();
+}
+
 const perguntas = [
     {
         const perguntas = [
